@@ -11,14 +11,12 @@
 
         public void Iniciar()
         {
-            // Aquí adaptas la llamada a los métodos específicos del MotorElectrico
             _motorElectrico.Conectar();
             _motorElectrico.Activar();
         }
 
         public void Detener()
         {
-            // Implementa la lógica para detener el motor eléctrico
             _motorElectrico.Desactivar();
             _motorElectrico.Desconectar();
         }
