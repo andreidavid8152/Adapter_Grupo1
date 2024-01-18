@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace FactoryMethod_Grupo1.Migrations
+namespace Adapter_Grupo1.Migrations
 {
     /// <inheritdoc />
     public partial class createTables : Migration

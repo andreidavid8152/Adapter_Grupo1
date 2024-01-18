@@ -1,9 +1,9 @@
-﻿using FactoryMethod_Grupo1.Data;
-using FactoryMethod_Grupo1.Adapter;
-using FactoryMethod_Grupo1.Models;
+﻿using Adapter_Grupo1.Data;
+using Adapter_Grupo1.Adapter;
+using Adapter_Grupo1.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FactoryMethod_Grupo1.Controllers
+namespace Adapter_Grupo1.Controllers
 {
     public class AdapterController : Controller
     {

@@ -1,8 +1,8 @@
-using FactoryMethod_Grupo1.Models;
+using Adapter_Grupo1.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace FactoryMethod_Grupo1.Controllers
+namespace Adapter_Grupo1.Controllers
 {
     public class HomeController : Controller
     {

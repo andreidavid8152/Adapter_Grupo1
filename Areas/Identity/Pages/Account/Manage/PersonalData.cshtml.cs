@@ -2,13 +2,13 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 using System;
 using System.Threading.Tasks;
-using FactoryMethod_Grupo1.Models;
+using Adapter_Grupo1.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace FactoryMethod_Grupo1.Areas.Identity.Pages.Account.Manage
+namespace Adapter_Grupo1.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {

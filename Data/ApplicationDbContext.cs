@@ -1,8 +1,8 @@
-﻿using FactoryMethod_Grupo1.Models;
+﻿using Adapter_Grupo1.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FactoryMethod_Grupo1.Data
+namespace Adapter_Grupo1.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

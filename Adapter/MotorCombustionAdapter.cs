@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod_Grupo1.Adapter
+﻿namespace Adapter_Grupo1.Adapter
 {
     public class MotorCombustionAdapter : IMotorAdapter
     {
