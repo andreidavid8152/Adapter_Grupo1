@@ -1,0 +1,36 @@
+﻿
+@{
+    var motores = Model;
+    ViewData["Title"] = "Lista de Motores";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Especificaciones</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var motor in Model)
+        {
+            <tr>
+                <td>@motor.Id</td>
+                <td>@motor.Tipo</td>
+                <td>@motor.Especificaciones</td>
+                <td>@motor.Estado</td>
+                <td>
+                    <a asp-action="IniciarMotor" asp-route-id="@motor.Id" class="btn btn-success">Iniciar</a>
+                    <a asp-action="DetenerMotor" asp-route-id="@motor.Id" class="btn btn-danger">Detener</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Agregar Motor</a>

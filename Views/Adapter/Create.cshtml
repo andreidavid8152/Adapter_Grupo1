@@ -1,0 +1,37 @@
+﻿@model FactoryMethod_Grupo1.Models.Motor
+
+@{
+    ViewData["Title"] = "Crear Motor";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="form-group">
+        <label asp-for="Tipo">Tipo de Motor</label>
+        <select asp-for="Tipo" class="form-control">
+            @foreach (var tipo in new List<string> { "Electrico", "Combustion" })
+            {
+                <option value="@tipo">@tipo</option>
+            }
+        </select>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+        <label asp-for="Especificaciones">Especificaciones</label>
+        <input asp-for="Especificaciones" class="form-control" />
+
+        <input asp-for="Estado" hidden value="Nuevo" class="form-control" />
+    </div>
+
+    <br />
+
+
+    <button type="submit" asp-action="index" class="btn btn-primary">Regresar</button>
+    <button type="submit" class="btn btn-success">Crear Motor</button>
+   
+
+</form>
